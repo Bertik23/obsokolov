@@ -1,5 +1,5 @@
 <sidenav>
-    {% for navCategory in site.sidenav %}
+    {% for navCategory in site.data.sidenav %}
         <h4>{{ navCategory.title }}</h4>
         {% for navItem in navCategory.items %}
             <div>

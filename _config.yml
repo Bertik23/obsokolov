@@ -23,6 +23,9 @@ sidenav:
     items:
       - title: "Oblastní žebříček"
         url: "/oblastni-zebricek"
-      
+      - title: "Únorový běh"
+        url: "/unorak"
+      - title: "Přebory škol"
+        url: /prebory-skol
 
 
