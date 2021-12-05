@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}" class="theme--default">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include components/navbar.html %}
+    <div class="mainGrid">
+      <main>
+        {{ content }}
+      </main>
+      {% include components/sidenav.html %}
+    </div>
+  </body>
+</html>

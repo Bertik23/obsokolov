@@ -1,0 +1,43 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import "themes";
+@import "navbar";
+@import "posts";
+
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+
+body {
+  padding: 0;
+  margin: 0;
+
+  @include themed() {
+    color: t($text);
+    background: t($bg);
+  }
+  font-family: $bodyFont;
+}
+
+main{
+  padding: 1em;
+}
+
+.fadeOut{
+  @include themed(){
+    background-image: linear-gradient(90deg, t($text), t($bg));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+a {
+  text-decoration: none;
+  @include themed(){
+    color: t($link)
+  }
+}
+
+.mainGrid{
+  padding: 2em;
+  display: grid;
+  grid-template-columns: [first] auto [line2] 5em [end];
+}

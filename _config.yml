@@ -1,0 +1,27 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "OB Sokolov" # the name of your site, e.g. ACME Corp.
+lang: "cs-CZ"
+
+
+### POSTS ###
+mainPagePostLen: 480
+mainPagePostFadeOutLen: 40
+
+
+### NAVBAR ###
+navbar:
+  - title: "Aktuality"
+    url: "/"
+  - title: "ZČO"
+    url: "https://zco.orientacnibeh.cz"
+
+
+### SIDENAV ###
+sidenav:
+  - title: Pořádáme
+    items:
+      - title: "Oblastní žebříček"
+        url: "/oblastni-zebricek"
+
+

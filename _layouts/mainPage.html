@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<h2>Posts</h2>
+
+{% for post in site.posts %}
+<h3 class="postTitle"><a href="{{ post.url | relative_url }}">{{post.title}}</a></h3>
+<p>{{post.content | slice: 0, site.mainPagePostLen }}
+    {% if post.content.size > site.mainPagePostLen%}
+    {% assign fadeOutStart = site.mainPagePostLen | plus, 1 %}
+    <span class="fadeOut">{{post.content | slice: fadeOutStart, site.mainPagePostFadeOutLen }} ...</span>
+    {% endif %}
+</p>
+{% endfor %}

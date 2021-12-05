@@ -1,0 +1,8 @@
+<nav>
+    {% for navItem in site.navbar %}
+        <div>
+            <a href="{{ navItem.url }}">{{ navItem.title }}</a>
+        </div>
+    {% endfor %}
+    {% include components/themetoggle.html %}
+</nav>

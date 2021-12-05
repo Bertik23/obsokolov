@@ -1,0 +1,10 @@
+<sidenav>
+    {% for navCategory in site.sidenav %}
+        <h4>{{ navCategory.title }}</h4>
+        {% for navItem in navCategory.items %}
+            <div>
+                <a href="{{ navItem.url }}">{{ navItem.title }}</a>
+            </div>
+        {% endfor %}
+    {% endfor %}
+</sidenav>

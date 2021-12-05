@@ -1,0 +1,21 @@
+<button onclick="toggleTheme()">
+    <span id="themeToggleSpan"></span>
+</button>
+
+<script>
+    themeToggleSpan = document.getElementById("themeToggleSpan")
+    function toggleLook(){
+        if (document.getElementsByTagName("html")[0].classList.contains("theme--dark")){
+            themeToggleSpan.innerHTML = "Sun"
+        }
+        else {
+            themeToggleSpan.innerHTML = "Moon"
+        }
+    }
+    toggleLook()
+    function toggleTheme(){
+        document.getElementsByTagName("html")[0].classList.toggle("theme--dark")
+        document.getElementsByTagName("html")[0].classList.toggle("theme--default")
+        toggleLook()
+    }
+</script>

@@ -1,0 +1,23 @@
+@import "themes";
+
+nav{
+    position: sticky;
+    top: 0;
+
+    padding: 1rem;
+
+    @include themed() {
+        background-color: t($brand);
+    }
+}
+
+nav div{
+    display: inline;
+}
+
+nav a {
+    font-weight: bold;
+    @include themed(){
+        color: $text--dark
+    }
+}
