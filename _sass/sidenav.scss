@@ -1,0 +1,66 @@
+@import "themes";
+
+sidenav{
+    display: flex;
+    position: sticky;
+    top: calc(3rem + 2em);
+    border-radius: .75em;
+
+    flex-grow: 1;
+    flex-direction: column;
+
+    color: $text--dark;
+
+    @include themed() {
+        background-color: t($brand);
+        box-shadow: .1em .1em t($shadow);
+    }
+}
+
+sidenav hr{
+    width: calc(100%);
+    // margin-left: -.5rem;
+    margin: 0;
+}
+
+sidenav div{
+    display: block;
+    padding: .2rem;
+}
+
+sidenav div.links{
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+sidenav div:not(.links):hover {
+    @include themed(){
+        background-color: darken(t($brand), 2%);
+        border-radius: .5em;
+    }
+}
+
+sidenav a {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-weight: bold;
+    @include themed(){
+        color: $text--dark
+    }
+}
+
+sidenav h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding: -.5rem;
+    @include themed(){
+        background-color: lighten(t($brand), 5%);
+        border-radius: .5em .5em 0 0;
+    }
+}

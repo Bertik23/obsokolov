@@ -6,3 +6,15 @@
       url: "/unorak"
     - title: "Přebory škol"
       url: /prebory-skol
+- title: Vše o OB
+  items:
+    - title: Reprezentace
+      url: http://reprezentace.orientacnibeh.cz/
+    - title: Jak na to? SPRINT
+      url: http://www.orientacnibeh.cz/upload/dokumenty/sekce-ob/metodickydopissprintweb_20141102031821.pdf
+    - title: Jak na to? KRÁTKÁ TRAŤ
+      url: http://www.orientacnibeh.cz/upload/dokumenty/sekce-ob/metodickydopismiddleweb_20141102031939.pdf
+    - title: Taktika a technika v OB
+      url: http://www.orientacnibeh.cz/upload/dokumenty/sekce-ob/mdtaktikatechnikaob_20141102032755.pdf
+    - title: Jak začít s OB
+      url: https://zacitorientak.cz/

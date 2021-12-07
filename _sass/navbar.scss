@@ -4,10 +4,13 @@ nav{
     position: sticky;
     top: 0;
 
+    font-size: 1rem;
+
     padding: 1rem;
 
     @include themed() {
         background-color: t($brand);
+        box-shadow: .1em .1em t($shadow);
     }
 }
 

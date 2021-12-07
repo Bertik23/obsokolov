@@ -12,6 +12,7 @@ $brand-red: 'brand-red';
 $border: 'border';
 
 $brand: "brand";
+$shadow: "shadow";
 
 $themes: (
         default: (
@@ -22,7 +23,8 @@ $themes: (
                 link: $link-light,
                 // hover: $hover--light,
                 // border: $border--light
-                brand: $brand-light
+                brand: $brand-light,
+                shadow: $shadow-light
         ),
         dark: (
                 bg: $bg--dark,
@@ -32,7 +34,8 @@ $themes: (
                 link: $link-dark,
                 // hover: $hover--dark,
                 // border: $border--dark
-                brand: $brand-dark
+                brand: $brand-dark,
+                shadow: $shadow-dark
         ),
 );
 
